@@ -6,8 +6,10 @@
         <link rel="stylesheet" href="/css/main.css" th:href="@{/css/main.css}" />
     </head>
     <body>
+    <form action="/wordladder?beginWord=begin&&endWord=began" method="post">
+	  <input type="submit" value="Submit" />
+	</form>
         <div th:substituteby="index::logout"></div>
-        <h1>begin->began</h1>
         <p><a href="/index" th:href="@{/index}">Back to home page</a></p>
     </body>
 </html>
